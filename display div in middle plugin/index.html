@@ -1,0 +1,28 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title></title>
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="gMiddleDiv.js"></script>
+		<script>
+			$(function(){
+				$("#something").hide();
+				$("#bobby").click(function(){
+					$("#something").gMiddleDiv();
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div id="bobby" style="height:100px;width:100px;background-color:pink">
+			This is some stuff!
+		</div>
+		<div id="something" style="margin-top:200px; height:900px;width:300px;background-color:lightblue;text-align:center">
+			<form>
+				First name: <input type="text" name="firstname"><br>
+				Last name: <input type="text" name="lastname"><br>
+				<button id="middleDivCancel" type="button">Cancel</button>
+			</form>
+		</div>
+	</body>
+</html>
